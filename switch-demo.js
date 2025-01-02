@@ -1,7 +1,7 @@
-console.log('1for porotta 2 for fried rice 3 for biriyani 4 for shawarma')
+let read=require('readline-sync')
+let choice=parseInt(read.question('1.poratta 2.fried rice 3.biriyani 4.shawarma Enter your choice'))
 
-let choice=2
-    switch(choice){
+    switch(choice) {
     case 1:
         console.log('you have selected porotta')
         break
@@ -14,4 +14,7 @@ let choice=2
     case 4:
         console.log('you have selected shawarma')
         break
-}
+    default:
+       console.log('invalid number')
+
+   }
